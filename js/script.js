@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     const getWords = (time, t1, t2, t3) =>{
         if(time > 4 && time < 21 ) return t3;
         else
-        {
-            switch(time % 10)
+        {   
+            time %= 10
+            switch(true)
             {
             case time == 1: return t1;
             case time > 1 && time < 5: return t2;
