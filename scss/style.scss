@@ -11,8 +11,16 @@ html{
     
 }
 
+@media (max-width: 700px) {
+    .timer__body{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+}
+
     .timer{
-        max-width: 500px;
+        max-width: 700px;
         margin: 0 auto;
         margin-top: 20px;
         padding: 40px;
@@ -25,7 +33,6 @@ html{
         
         .timer__title{
             text-align: center;
-            
             color: rgb(35, 35, 214);
             font-size: 30px;
             font-weight: bold;
@@ -33,36 +40,13 @@ html{
         }
         .timer__body{
             display: flex;
-            justify-content: space-between;
-            padding: 20px;
+            
+            justify-content: space-evenly;
+            padding: 40px;
             color: rgb(35, 35, 214);
             font-size: 30px;
             font-weight: bold;
             
-            
-            .timer__hours__time{
-    
-            }
-
-            .timer__hours__text{
-
-            }
-    
-            .timer__minutes__time{
-    
-            }
-
-            .timer__minutes__text{
-
-            }
-
-            .timer__seconds__time{
-    
-            }
-
-            .timer__seconds__text{
-                
-            }
     
         }
     }
